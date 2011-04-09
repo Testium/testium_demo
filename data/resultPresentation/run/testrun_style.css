@@ -1,0 +1,184 @@
+#popup { position: absolute; }
+
+body > div#popup {
+  position: fixed; top: 20%; left: 20%;
+}
+
+div#popup {
+left: expression( ( 250 + ( popupWindow = document.documentElement.scrollLeft ? document.documentElement.scrollLeft : document.body.scrollLeft ) ) + 'px' );
+top: expression( ( 100 + ( popupWindow2 = document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop ) ) + 'px' );
+}
+
+
+td
+{
+	padding: 0px;
+}
+
+#logo
+{
+	float: right;
+	margin: 40px;
+}
+
+.titlename
+{
+	color: #0066ff;
+}
+
+.testinfo
+{
+	font: 14px sans-serif;
+	border: 0px;
+	border-collapse: collapse;
+	margin: 0 0 0 0; /* top right bottom left */
+}
+
+.leftside
+{
+	font: 14px sans-serif;
+	font-weight:bold;
+	width: 137px;
+}
+
+.systemundertestheader
+{
+	font: bold 18px sans-serif;
+	margin: 30px 0 10px 0; /* top right bottom left */
+}
+
+.systemundertestsummary
+{
+	font: 14px sans-serif;
+	margin-left: 5px;
+}
+
+.systemundertestinfo
+{
+	font: 12px sans-serif;
+	border: 0px;
+	border-collapse: collapse;
+	padding: 0 0 0 0; /* top right bottom left */
+	margin: 0 0 0 0; /* top right bottom left */
+}
+
+.logfiles
+{
+	width: 100px;
+}
+
+.logfilelink
+{
+	margin-right: 5px;
+}
+
+body
+{
+	font: bold 1.0em sans-serif, arial, helvetica;
+	color: #000000;
+	background-color: #ffffff;
+}
+
+#testsuite
+{
+	font: bold 1.4em sans-serif;
+	color: #0066ff;
+	margin-top: 30px;
+	margin-bottom: 10px;
+}
+
+.testgroup
+{
+	font: bold 18px sans-serif;
+	color: #000000;
+	width: 100%;
+	background-color: #dddddd;
+	border-width: 3px;
+	border-color: #808080;
+	border-style: solid;
+	border-collapse: separate;
+}
+
+.testgrouplogfiles
+{
+	font: 14px sans-serif;
+}
+
+.testgrouptotals
+{
+}
+
+
+.testtotals
+{
+	font: 14px sans-serif;
+	color: #000000;
+	border: 0px;
+}
+
+.testcase
+{
+	font: 12px sans-serif;
+	color: #000000;
+	width: 100%;
+	border-width: 0px;
+	border-collapse: collapse;
+}
+
+.popupstyle
+{
+	font: 12px sans-serif;
+	color: #000000;
+	width: 600px;
+	background-color: #FFFFFF;
+	border-width: 3px;
+	border-color: #000000;
+	border-style: solid;
+}
+
+.testcaseheader
+{
+	font: bold 18px sans-serif;
+	width: 250px;
+}
+
+.tceven
+{
+	background-color: #eeeeee;
+}
+
+.tcuneven
+{
+	background-color: #cccccc;
+}
+
+.tc_id 
+{
+	width: 200px;
+}
+
+.tr_width
+{
+	width: 100%;
+}
+
+.tc_result 
+{
+	width: 100px;
+}
+
+.tc_r_fail
+{
+	font: 14px sans-serif;
+	font-weight:bold;
+}
+
+.tc_r_pass
+{
+	font: 12px sans-serif;
+}
+
+.tc_comment
+{
+	width: 400px;
+}

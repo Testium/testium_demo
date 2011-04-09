@@ -1,0 +1,260 @@
+
+#testgroup
+{
+	font: bold 18px sans-serif;
+	color: #000000;
+	background-color: #dddddd;
+	border-width: 3px;
+	border-color: #808080;
+	border-style: solid;
+	border-collapse: collapse;
+}
+
+#testgroupheader
+{
+	height: 1.3em;
+	white-space: nowrap;
+	vertical-align: middle;
+	position: relative;
+	margin: 0;
+}
+
+#testgroupheader_plusmin
+{
+	float: left;
+	vertical-align: middle;
+	padding-right:3px;
+}
+
+#testgroupheader_id
+{
+	width: 50%;
+	vertical-align: middle;
+	float: left;
+}
+
+#testGroupHeaderInfo
+{
+	width: 45%;
+	vertical-align: bottom;
+	font: 14px sans-serif;
+	float: left;
+}
+
+#totalAboveItem
+{
+	width: 20%;
+	float: left;
+	text-align:left;
+}
+
+#totalAboveLabel
+{
+	float: left;
+	text-align:left;
+	padding-right:3px;
+}
+
+#totalAboveValue
+{
+	float: left;
+	overflow:hidden;
+	text-align:left;
+}
+
+#testGroupHeaderFilter
+{
+	width: 10%;
+	float: left;
+}
+
+#totalsBeneath
+{
+}
+
+#testGroupLinks
+{
+	clear:both;
+}
+
+#prepare
+{
+	background-color: #EEEEEE;
+	font: 12px sans-serif;
+	clear:both;
+}
+
+#restore
+{
+	background-color: #EEEEEE;
+	font: 12px sans-serif;
+	clear:both;
+}
+
+.steptable
+{
+	width: 100%;
+}
+
+.stepscript
+{
+	width: 50%;
+	font: 12px sans-serif;
+}
+
+.stepresult
+{
+	font: 12px sans-serif;
+}
+
+.leftside
+{
+	font: 14px sans-serif;
+	font-weight:bold;
+	width: 137px;
+}
+
+.logfiles
+{
+	width: 100px;
+}
+
+.logfilelink
+{
+	margin-right: 5px;
+}
+
+body
+{
+	font: bold 1.0em sans-serif, arial, helvetica;
+	color: #000000;
+	background-color: #ffffff;
+	margin:0px;
+	border:0px;
+}
+
+.testgrouplogfiles
+{
+	font: 14px sans-serif;
+}
+
+.testtotals
+{
+	font: 14px sans-serif;
+	color: #000000;
+	border: 0px;
+}
+
+/* Test Case table */
+#testcases
+{
+	clear:both;
+}
+
+.testcasetable
+{
+	width: 100%;
+	border-width: 0px;
+	border-collapse: collapse;
+}
+
+.tc_even
+{
+	background-color:#eeeeee;
+	cursor: pointer;
+}
+
+.tc_uneven
+{
+	background-color:#cccccc;
+	cursor: pointer;
+}
+
+.tc_id
+{
+	width: 50%;
+	font: 14px sans-serif;
+	padding-bottom:2px;
+}
+
+.tc_r_fail
+{
+	width: 10%;
+	font: 14px sans-serif;
+	font-weight:bold;
+}
+
+.tc_r_pass
+{
+	width: 10%;
+	font: 12px sans-serif;
+}
+
+.tc_comment
+{
+	width: 40%;
+}
+
+
+/* popup */
+
+#popup
+{
+	position: absolute;
+}
+
+body > div#popup 
+{
+  position: fixed; top: 20%; left: 20%;
+}
+
+div#popup 
+{
+	left: expression( ( 250 + ( popupWindow = document.documentElement.scrollLeft ? document.documentElement.scrollLeft : document.body.scrollLeft ) ) + 'px' );
+	top: expression( ( 100 + ( popupWindow2 = document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop ) ) + 'px' );
+}
+
+.popupstyle
+{
+	font: 12px sans-serif;
+	color: #000000;
+	width: 600px;
+	background-color: #FFFFFF;
+	border-width: 3px;
+	border-color: #000000;
+	border-style: solid;
+}
+
+.popupinnerstyle
+{
+	font: 12px sans-serif;
+	color: #000000;
+	width: 600px;
+	background-color: #FFFFFF;
+	border-width: 0px;
+	border-color: #000000;
+	border-style: solid;
+	overflow: auto;
+}
+
+.testcase
+{
+	font: 12px sans-serif;
+	color: #000000;
+	width: 100%;
+	border-width: 0px;
+	border-collapse: collapse;
+}
+
+.testcaseheader
+{
+	font: bold 18px sans-serif;
+	width: 250px;
+}
+
+#ifr_popup
+{
+	width: 100%;
+	border: 0px;
+	overflow: auto;
+}

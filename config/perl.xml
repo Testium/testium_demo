@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PerlConfiguration>
+    <logfileOption>-l</logfileOption>
+    <passSettings>false</passSettings>
+    <settingsOption>n.a.</settingsOption>
+    <settingsFile>n.a.</settingsFile>
+    <resultType>logonly</resultType>
+</PerlConfiguration>

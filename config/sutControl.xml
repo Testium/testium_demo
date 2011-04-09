@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SutControlConfiguration>
+  <name>Testium Example TestSuite</name>
+  <sutControl>{basedir}\src\sutControl.bat</sutControl>
+  <parameters>
+    <start>start</start>
+    <stop>stop</stop>
+    <restart>restart</restart>
+    <version>version</version>
+    <longVersion>version -long</longVersion>
+	<settings>-c {userhome}/.testautomation</settings>
+  </parameters>
+  <versionFormat>R%M.%S.%P</versionFormat>
+  <!--
+      %M: Main version level,
+      %S: Sub version level,
+      %P: Patch level,
+      %%: The %-character
+    -->
+</SutControlConfiguration>
