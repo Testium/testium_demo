@@ -1,0 +1,23 @@
+<testgroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="seleniumTestGroup">
+  <description>Test Group to test the Selenium plugin</description>
+  <requirementid>req5.1</requirementid>
+  <requirementid>req5.2</requirementid>
+  <testcaselink id="01_open_close">
+    TC_001_open_close.xml
+  </testcaselink>
+  <testcaselink id="02_get_no_URL">
+    TC_002_get_noURL.xml
+  </testcaselink>
+  <testcaselink id="03_get_empty_URL">
+    TC_003_get_emptyURL.xml
+  </testcaselink>
+  <testgrouplink id="commands">
+	command_tests\TG_Commands.xml
+  </testgrouplink>
+  <testgrouplink id="google">
+	google_tests\TG_Google.xml
+  </testgrouplink>
+  <testgrouplink id="bing">
+	bing_tests\TG_Bing.xml
+  </testgrouplink>
+</testgroup>

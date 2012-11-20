@@ -1,0 +1,41 @@
+<testcase id="01_open_close">
+  <description>Test Group to test the Selenium plugin</description>
+  <execute>
+    <teststep>
+	  <command interface="Browser">get</command>
+	  <parameter id="url" type="string" sequence="1">
+	    <value>http://www.google.com/</value>
+	  </parameter>
+	</teststep>
+    <teststep>
+	  <command interface="Default">wait</command>
+	  <parameter id="TIME" type="int" sequence="1">
+	    <value>10</value>
+	  </parameter>
+	</teststep>
+    <teststep>
+	  <command interface="Browser">getCurrentUrl</command>
+	  <parameter id="url" type="string" sequence="1">
+	    <variable>GoogleURL</variable>
+	  </parameter>
+	</teststep>
+    <teststep>
+	  <command interface="Default">checkVariable</command>
+	  <parameter id="VARIABLE" type="string" sequence="1">
+	    <variable>GoogleURL</variable>
+	  </parameter>
+	  <parameter id="VALUE" type="string" sequence="2">
+	    <value>http://www.google.nl/</value>
+	  </parameter>
+	</teststep>
+    <teststep>
+	  <command interface="Browser">checkCurrentUrl</command>
+	  <parameter id="url" type="string" sequence="1">
+	    <value>http://www.google.nl/</value>
+	  </parameter>
+	</teststep>
+    <teststep>
+	  <command interface="Browser">quit</command>
+	</teststep>
+  </execute>
+</testcase>

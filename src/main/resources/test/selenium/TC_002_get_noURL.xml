@@ -1,0 +1,11 @@
+<testcase id="02_get_no_URL">
+  <description>Test Case to test verification of missing parameters</description>
+  <execute>
+    <teststep>
+	  <command interface="Browser">get</command>
+	</teststep>
+    <teststep>
+	  <command interface="Browser">quit</command>
+	</teststep>
+  </execute>
+</testcase>

@@ -1,0 +1,175 @@
+<testGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="1stTestGroup" type="standard">
+  <description>An example Test Group</description>
+  <requirementId>req1</requirementId>
+  <requirementId>req2</requirementId>
+  <requirementId>req3</requirementId>
+  <requirementId>req4</requirementId>
+  <initialize sequence="3">
+    <description>Initialization</description>
+    <command interface="sut" name="start"></command>
+    <AnyElementYouLike>Some Data Or Other Elements</AnyElementYouLike>
+    <AnyElementYouLike>Some other Data Or Other Elements</AnyElementYouLike>
+  </initialize>
+  <testCase id="TestCase1" sequence="1">
+    <description>Execution of a DOS command: dir</description>
+    <execution>
+      <action sequence="1">
+        <command interface="ie1" name="start">
+          <parameter name="URL">http://www.google.com</parameter>
+        </command>
+      </action>
+      <action sequence="2">
+        <command name="wait">
+          <parameter name="time">2</parameter>
+        </command>
+      </action>
+      <action sequence="3">
+        <command interface="ie1" name="open">
+          <parameter name="URL">http://www.testtoolinterfaces.com</parameter>
+        </command>
+      </action>
+      <action sequence="4">
+        <command name="wait">
+          <parameter name="time">2</parameter>
+        </command>
+      </action>
+      <action sequence="5">
+        <command interface="ie1" name="restart">
+          <parameter name="URL">http://www.arjankranenburg.com</parameter>
+        </command>
+      </action>
+      <action sequence="6">
+        <command name="wait">
+          <parameter name="time">2</parameter>
+        </command>
+      </action>
+      <action sequence="7">
+        <command interface="ie1" name="maximize">
+        </command>
+      </action>
+      <action sequence="8">
+        <command name="wait">
+          <parameter name="time">2</parameter>
+        </command>
+      </action>
+      <action sequence="9">
+        <command interface="ie1" name="restore"/>
+      </action>
+      <action sequence="10">
+        <command name="wait">
+          <parameter name="time">2</parameter>
+        </command>
+      </action>
+      <action sequence="11">
+        <command interface="ie1" name="minimize">
+        </command>
+      </action>
+      <action sequence="12">
+        <command name="wait">
+          <parameter name="time">2</parameter>
+        </command>
+      </action>
+      <action sequence="13">
+        <command interface="ie1" name="restore">
+        </command>
+      </action>
+      <action sequence="14">
+        <command name="wait">
+          <parameter name="time">2</parameter>
+        </command>
+      </action>
+      <action sequence="15">
+        <command interface="ie1" name="fullscreen">
+       </command>
+      </action>
+      <action sequence="16">
+        <command name="wait">
+          <parameter name="time">2</parameter>
+        </command>
+      </action>
+      <action sequence="17">
+        <command interface="ie1" name="restore">
+        </command>
+      </action>
+      <action sequence="18">
+        <command name="wait">
+          <parameter name="time">2</parameter>
+        </command>
+      </action>
+      <action sequence="19">
+        <command interface="ie1" name="theatremode">
+        </command>
+      </action>
+      <action sequence="20">
+        <command name="wait">
+          <parameter name="time">2</parameter>
+        </command>
+      </action>
+      <action sequence="21">
+        <command interface="ie1" name="restore">
+        </command>
+      </action>
+      <action sequence="22">
+        <command name="wait">
+          <parameter name="time">2</parameter>
+        </command>
+      </action>
+      <action sequence="23">
+        <command interface="ie1" name="visible">
+        </command>
+      </action>
+      <action sequence="24">
+        <command name="wait">
+          <parameter name="time">2</parameter>
+        </command>
+      </action>
+      <action sequence="25">
+        <command interface="ie1" name="restore">
+        </command>
+      </action>
+      <action sequence="26">
+        <command name="wait">
+          <parameter name="time">2</parameter>
+        </command>
+      </action>
+      <action sequence="27">
+        <command interface="ie1" name="top">
+          <parameter name="ycoord">25</parameter>
+        </command>
+      </action>
+      <action sequence="28">
+        <command name="wait">
+          <parameter name="time">2</parameter>
+        </command>
+      </action>
+      <action sequence="29">
+        <command interface="ie1" name="restore">
+        </command>
+      </action>
+      <action sequence="30">
+        <command name="wait">
+          <parameter name="time">2</parameter>
+        </command>
+      </action>
+      <action sequence="31">
+        <command interface="ie1" name="left">
+          <parameter name="xcoord">100</parameter>
+        </command>
+      </action>
+      <action sequence="32">
+        <command name="wait">
+          <parameter name="time">2</parameter>
+        </command>
+      </action>
+    </execution>
+    <restore sequence="1">
+      <command interface="ie1" name="stop">
+      </command>
+    </restore>
+    <restore sequence="2">
+      <command name="wait">
+        <parameter name="time">2</parameter>
+      </command>
+    </restore>
+  </testCase>
+</testGroup>

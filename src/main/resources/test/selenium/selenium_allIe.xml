@@ -1,0 +1,16 @@
+<testgroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="seleniumIe">
+	<prepare>
+	    <teststep sequence="11">
+		  <command interface="Default">setVariable</command>
+		  <parameter id="name" type="string" sequence="1">
+		    <value>browsertype</value>
+		  </parameter>
+		  <parameter id="value" type="string" sequence="2">
+		    <value>ie</value>
+		  </parameter>
+		</teststep>
+	</prepare>
+	<testgrouplink id="seleniumTestGroup" sequence="12" type="tti">
+    	testGroup_Selenium.xml
+	</testgrouplink>
+</testgroup>

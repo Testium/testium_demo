@@ -1,0 +1,23 @@
+<testcase id="001_set_check_variable">
+  <description>Test Case to test setting and checking a variable</description>
+  <execute>
+    <action>
+	  <command interface="Default">setVariable</command>
+	  <parameter id="name" type="string" sequence="1">
+	    <value>Foppe</value>
+	  </parameter>
+	  <parameter id="value" type="string" sequence="2">
+	    <value>Fryslan</value>
+	  </parameter>
+	</action>
+    <check>
+	  <command interface="Default">checkVariable</command>
+	  <parameter id="VARIABLE" type="string" sequence="1">
+	    <variable>Foppe</variable>
+	  </parameter>
+	  <parameter id="VALUE" type="string" sequence="2">
+	    <value>Fryslan</value>
+	  </parameter>
+	</check>
+  </execute>
+</testcase>

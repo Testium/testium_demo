@@ -1,0 +1,6 @@
+<testgroup id="level1_TestGroup">
+  <description>Test Group on the first level</description>
+  <testgrouplink id="2ndLevelTestGroup" type="tti">
+	level2\testGroupFile_lvl2.xml
+  </testgrouplink>
+</testgroup>

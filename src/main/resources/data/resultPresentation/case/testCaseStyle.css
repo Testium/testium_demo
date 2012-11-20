@@ -1,0 +1,69 @@
+
+table
+{
+	border-top-style:solid;
+	border-top-width:2px;
+	width:100%;
+}
+
+.leftside
+{
+	font: 14px sans-serif;
+	font-weight:bold;
+	padding-right: 25px;
+}
+
+.step_id
+{
+	font: 14px sans-serif;
+	font-weight:bold;
+	padding-right: 25px;
+	width: 70%;
+}
+
+.tc_r_fail
+{
+	width: 10%;
+	font: 14px sans-serif;
+	font-weight:bold;
+	color: #FF0000;
+}
+
+.tc_r_pass
+{
+	width: 10%;
+	font: 12px sans-serif;
+}
+
+.result
+{
+}
+
+.logfilelink
+{
+	margin-right: 5px;
+}
+
+body
+{
+	color: #000000;
+	background-color: #ffffff;
+}
+
+#prepare
+{
+	font: 12px sans-serif;
+	background-color: #ffff99;
+}
+
+#execute
+{
+	background-color: #ffff99;
+}
+
+#restore
+{
+	font: 12px sans-serif;
+	background-color: #ffff99;
+}
+

@@ -1,0 +1,14 @@
+<testcase id="03_save_page_source">
+  <description>Test Case for savePageSource</description>
+  <execute>
+    <teststep>
+	  <command interface="Browser">savePageSource</command>
+	</teststep>
+    <teststep>
+	  <command interface="Browser">savePageSource</command>
+	</teststep>
+    <teststep>
+	  <command interface="Browser">savePageSource</command>
+	</teststep>
+  </execute>
+</testcase>

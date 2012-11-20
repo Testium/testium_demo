@@ -1,0 +1,27 @@
+<testgroup id="all">
+  <prepare>
+    <teststep>
+      <description>Preparing for the test</description>
+      <script type="shell">cmdScript.cmd</script>
+      <parameter id="parameter" sequence="1">
+	    <value>3</value>
+	  </parameter>
+	</teststep>
+    <teststep>
+      <description>Doing a perl preparation first</description>
+      <script type="perl">perlTest.pl</script>
+	</teststep>
+  </prepare>
+  <testgrouplink id="dos">
+	testGroupFile.xml
+  </testgrouplink>
+  <testgrouplink id="default">
+	default\testGroup_Default.xml
+  </testgrouplink>
+  <testgrouplink id="selenium">
+	selenium\testGroup_Selenium.xml
+  </testgrouplink>
+  <!--testgrouplink id="level1_TestGroup">
+	level1\testGroupFile_lvl1.xml
+  </testgrouplink-->
+</testgroup>

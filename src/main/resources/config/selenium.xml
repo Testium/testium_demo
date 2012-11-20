@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SeleniumConfiguration>
+    <DefaultBrowser>firefox</DefaultBrowser><!-- FIREFOX, IE, CHROME -->
+    <SavePageSource>ONFAIL</SavePageSource>
+    <SaveScreenshot>ALWAYS</SaveScreenshot>
+    <ChromeDriver>{basedir}\..\..\src\main\resources\data\chromedriver.exe</ChromeDriver>
+    <IePathToDriverServer>{basedir}\..\..\src\main\resources\data\IEDriverServer.exe</IePathToDriverServer>
+	<SeleniumInterfaces>
+		<SeleniumInterface name="Browser">
+		</SeleniumInterface>
+		<SeleniumInterface name="Google">
+		<!-- 
+		    <CustomStepDefinitionsLink>{basedir}\keywords\google_search.xml</CustomStepDefinitionsLink>
+ -->
+		</SeleniumInterface>
+	 	<SeleniumInterface name="Bing">
+		</SeleniumInterface>
+	</SeleniumInterfaces>
+</SeleniumConfiguration>

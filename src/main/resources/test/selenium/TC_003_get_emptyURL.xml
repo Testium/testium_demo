@@ -1,0 +1,14 @@
+<testcase id="03_get_empty_URL">
+  <description>Test Case to test verification of an Empty URL</description>
+  <execute>
+    <teststep>
+	  <command interface="Browser">get</command>
+	  <parameter id="url" type="string" sequence="1">
+	    <value></value>
+	  </parameter>
+	</teststep>
+    <teststep>
+	  <command interface="Browser">quit</command>
+	</teststep>
+  </execute>
+</testcase>

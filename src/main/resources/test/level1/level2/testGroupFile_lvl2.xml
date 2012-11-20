@@ -1,0 +1,14 @@
+<testgroup id="2ndLevelTestGroup">
+  <description>Test Group on the 2nd level</description>
+  <requirementid>req1.2</requirementid>
+  <requirementid>req2.2</requirementid>
+  <testcaselink id="TestCase2" sequence="1" type="shell">
+	cmdScriptFailed.cmd
+  </testcaselink>
+  <testcaselink id="TestCase3" sequence="2" type="shell">
+	cmdScriptSleep.cmd
+  </testcaselink>
+  <testcaselink id="TestCase4" sequence="3" type="shell">
+	cmdScript.cmd
+  </testcaselink>
+</testgroup>

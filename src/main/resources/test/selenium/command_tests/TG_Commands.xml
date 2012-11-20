@@ -1,0 +1,33 @@
+<testgroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="commands">
+  <description>Test Group to test the Commands of the Selenium plugin</description>
+  <requirementid>req5.1</requirementid>
+  <requirementid>req5.2</requirementid>
+  <prepare>
+    <teststep>
+	  <command interface="Browser">get</command>
+	  <parameter id="url" type="string">
+	    <value>http://www.google.com/</value>
+	  </parameter>
+	</teststep>
+  </prepare>
+  <testcaselink id="01_get_check_currentUrl">
+    TC_001_getCheckCurrentUrl.xml
+  </testcaselink>
+  <testcaselink id="02_get_check_title">
+    TC_002_getCheckTitle.xml
+  </testcaselink>
+  <testcaselink id="03_save_page_source">
+    TC_003_savePageSource.xml
+  </testcaselink>
+  <testcaselink id="04_findElement_sendKeys_submitElement">
+    TC_004_findElement.xml
+  </testcaselink>
+  <testcaselink id="05_findElements_checkListSize_getListElement_SendKeys_submitElement">
+    TC_005_findElements.xml
+  </testcaselink>
+  <restore>
+    <teststep>
+	  <command interface="Browser">quit</command>
+	</teststep>
+  </restore>
+</testgroup>

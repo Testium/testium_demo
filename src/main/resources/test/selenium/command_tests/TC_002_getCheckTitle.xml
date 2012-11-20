@@ -1,0 +1,26 @@
+<testcase id="02_get_check_title">
+  <description>Test Case for getTitle and checkTitle</description>
+  <execute>
+    <teststep>
+	  <command interface="Browser">getTitle</command>
+	  <parameter id="title" type="string">
+	    <variable>GoogleTitle</variable>
+	  </parameter>
+	</teststep>
+    <teststep>
+	  <command interface="Default">checkVariable</command>
+	  <parameter id="VARIABLE" type="string">
+	    <variable>GoogleTitle</variable>
+	  </parameter>
+	  <parameter id="VALUE" type="string">
+	    <value>Google</value>
+	  </parameter>
+	</teststep>
+    <teststep>
+	  <command interface="Browser">checkTitle</command>
+	  <parameter id="title" type="string">
+	    <value>Google</value>
+	  </parameter>
+	</teststep>
+  </execute>
+</testcase>

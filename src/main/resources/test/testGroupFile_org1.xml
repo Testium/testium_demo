@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<testGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="1stTestGroup" type="default">
+  <description>An example Test Group</description>
+  <requirementId>req1</requirementId>
+  <requirementId>req2</requirementId>
+  <requirementId>req3</requirementId>
+  <requirementId>req4</requirementId>
+  <initialize sequence="0">
+    <description>Initialization</description>
+    <command>doSomething</command>
+    <AnyElementYouLike>Some Data Or Other Elements</AnyElementYouLike>
+    <AnyElementYouLike>Some other Data Or Other Elements</AnyElementYouLike>
+  </initialize>
+  <testGroup id="2ndTestGroup" sequence="1">
+    <description>another test Group</description>
+    <requirementId>req1</requirementId>
+    <requirementId>req2</requirementId>
+    <initialize>
+      <command>doInitialize</command>
+      <AnotherElement>Any Data Or Other Elements</AnotherElement>
+    </initialize>
+    <initialize>
+      <command>moreInitialization</command>
+    </initialize>
+    <testCase id="TestCase1" type="Default" sequence="1">
+      <description>An extensive Test Case description</description>
+      <requirementId>req_1</requirementId>
+      <requirementId>req_2</requirementId>
+      <requirementId>req_3</requirementId>
+      <initialize>
+        <description>Description of initialization step 1</description>
+        <command>do initialize</command>
+      </initialize>
+      <initialize>
+        <command>do more_initialization</command>
+      </initialize>
+      <initialize>
+        <description>Description of initialization step 3</description>
+        <command>do even_more_initialization</command>
+      </initialize>
+      <execution>
+        <action sequence="1">
+          <command>do action param1</command>
+        </action>
+        <action sequence="2">
+          <command>do action param2</command>
+        </action>
+        <action>
+          <command>do action param3</command>
+        </action>
+        <check sequence="4">
+          <command>do check param4</command>
+        </check>
+        <check sequence="5">
+          <command>do check param5</command>
+        </check>
+        <check>
+          <command>do check param6</command>
+        </check>
+        <check sequence="7">
+          <command>do check param7</command>
+        </check>
+      </execution>
+      <restore sequence="0">
+        <description>A restore description</description>
+        <command>restore SUT</command>
+      </restore>
+    </testCase>
+    <restore sequence="3">
+      <command>doRestore</command>
+      <AnyElementYouLike>Some Data Or Other Elements</AnyElementYouLike>
+    </restore>
+    <AnyElementYouLike>Some Data Or Other Elements</AnyElementYouLike>
+    <AnyElementYouLike2>Some Data Or Other Elements2</AnyElementYouLike2>
+  </testGroup>
+  <testCase id="TestCase1" sequence="2">
+    <description>string</description>
+    <requirementId>string</requirementId>
+    <requirementId>string</requirementId>
+    <initialize>
+      <command>string</command>
+      <AnyElementYouLike>Some Data Or Other Elements</AnyElementYouLike>
+    </initialize>
+    <execution>
+      <action sequence="1">
+        <command>do action param1</command>
+      </action>
+      <AnyElementYouLike>Some Data Or Other Elements</AnyElementYouLike>
+    </execution>
+    <restore sequence="2">
+      <command>string</command>
+      <AnyElementYouLike>Some Data Or Other Elements</AnyElementYouLike>
+    </restore>
+    <restore>
+      <command>string</command>
+      <AnyElementYouLike>Some Data Or Other Elements</AnyElementYouLike>
+    </restore>
+    <restore>
+      <command>string</command>
+      <AnyElementYouLike>Some Data Or Other Elements</AnyElementYouLike>
+    </restore>
+    <restore>
+      <command>string</command>
+      <AnyElementYouLike>Some Data Or Other Elements</AnyElementYouLike>
+    </restore>
+    <restore sequence="3">
+      <command>string</command>
+      <AnyElementYouLike>Some Data Or Other Elements</AnyElementYouLike>
+    </restore>
+    <AnyElementYouLike>Some Data Or Other Elements</AnyElementYouLike>
+    <AnyElementYouLike>Some Data Or Other Elements</AnyElementYouLike>
+  </testCase>
+  <testCase id="TestCase2"  sequence="3">
+    <description>string</description>
+    <requirementId>string</requirementId>
+    <requirementId>string</requirementId>
+    <initialize>
+      <command>string</command>
+      <AnyElementYouLike>Some Data Or Other Elements</AnyElementYouLike>
+    </initialize>
+    <initialize>
+      <command>string</command>
+      <AnyElementYouLike>Some Data Or Other Elements</AnyElementYouLike>
+    </initialize>
+    <initialize sequence="4">
+      <command>string</command>
+      <AnyElementYouLike>Some Data Or Other Elements</AnyElementYouLike>
+    </initialize>
+    <execution>
+      <script>string</script>
+    </execution>
+    <restore sequence="5">
+      <command>string</command>
+      <AnyElementYouLike>Some Data Or Other Elements</AnyElementYouLike>
+    </restore>
+    <restore sequence="6">
+      <command>string</command>
+      <AnyElementYouLike>Some Data Or Other Elements</AnyElementYouLike>
+    </restore>
+    <AnyElementYouLike>Some Data Or Other Elements</AnyElementYouLike>
+    <AnyElementYouLike>Some Data Or Other Elements</AnyElementYouLike>
+    <AnyElementYouLike>Some Data Or Other Elements</AnyElementYouLike>
+    <AnyElementYouLike>Some Data Or Other Elements</AnyElementYouLike>
+    <AnyElementYouLike>Some Data Or Other Elements</AnyElementYouLike>
+  </testCase>
+  <testCase id="TestCase3" sequence="4">
+    <description>string</description>
+    <requirementId>string</requirementId>
+    <requirementId>string</requirementId>
+    <requirementId>string</requirementId>
+    <initialize>
+      <command>string</command>
+      <AnyElementYouLike>Some Data Or Other Elements</AnyElementYouLike>
+    </initialize>
+    <initialize sequence="7">
+      <command>string</command>
+      <AnyElementYouLike>Some Data Or Other Elements</AnyElementYouLike>
+    </initialize>
+    <initialize sequence="8">
+      <command>string</command>
+      <AnyElementYouLike>Some Data Or Other Elements</AnyElementYouLike>
+    </initialize>
+    <initialize>
+      <command>string</command>
+      <AnyElementYouLike>Some Data Or Other Elements</AnyElementYouLike>
+    </initialize>
+    <execution>
+      <script type="string">string</script>
+    </execution>
+    <restore sequence="9">
+      <command>string</command>
+      <AnyElementYouLike>Some Data Or Other Elements</AnyElementYouLike>
+    </restore>
+    <restore>
+      <command>string</command>
+      <AnyElementYouLike>Some Data Or Other Elements</AnyElementYouLike>
+    </restore>
+    <AnyElementYouLike>Some Data Or Other Elements</AnyElementYouLike>
+    <AnyElementYouLike>Some Data Or Other Elements</AnyElementYouLike>
+  </testCase>
+  <testCase id="TestCase4">
+    <description>string</description>
+    <requirementId>string</requirementId>
+    <requirementId>string</requirementId>
+    <requirementId>string</requirementId>
+    <requirementId>string</requirementId>
+    <initialize>
+      <command>string</command>
+      <AnyElementYouLike>Some Data Or Other Elements</AnyElementYouLike>
+    </initialize>
+    <execution>
+      <script>string</script>
+    </execution>
+    <restore>
+      <command>string</command>
+      <AnyElementYouLike>Some Data Or Other Elements</AnyElementYouLike>
+    </restore>
+    <restore sequence="10">
+      <command>string</command>
+      <AnyElementYouLike>Some Data Or Other Elements</AnyElementYouLike>
+    </restore>
+    <restore>
+      <command>string</command>
+      <AnyElementYouLike>Some Data Or Other Elements</AnyElementYouLike>
+    </restore>
+    <restore sequence="11">
+      <command>string</command>
+      <AnyElementYouLike>Some Data Or Other Elements</AnyElementYouLike>
+    </restore>
+    <restore>
+      <command>string</command>
+      <AnyElementYouLike>Some Data Or Other Elements</AnyElementYouLike>
+    </restore>
+    <LastOtherElement>Some Data Or Other Elements</LastOtherElement>
+  </testCase>
+  <restore>
+    <description>cleanup</description>
+    <command>Group level cleanup</command>
+    <Any1ElementYouLike>Some Data Or Other Elements</Any1ElementYouLike>
+    <Any2ElementYouLike>Some Data Or Other Elements</Any2ElementYouLike>
+    <Any3ElementYouLike>Some Data Or Other Elements</Any3ElementYouLike>
+    <Any4ElementYouLike>Some Data Or Other Elements</Any4ElementYouLike>
+  </restore>
+  <restore sequence="9">
+    <description>more cleanup</description>
+    <command>shutdown</command>
+  </restore>
+</testGroup>

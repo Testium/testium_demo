@@ -1,0 +1,27 @@
+<testgroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="bing">
+  <description>Test Group to test the Custom Commands</description>
+  <prepare>
+    <teststep>
+      <command interface="Bing">defineElement</command>
+		<parameter id="by" type="id">
+		  <value>sb_form_q</value>
+		</parameter>
+		<parameter id="name" type="String">
+		  <value>queryField</value>
+		</parameter>
+    </teststep>
+  </prepare>
+  
+  <testcaselink id="01_search">
+    TC_001_search.xml
+  </testcaselink>
+  <testcaselink id="02_refineSearch">
+    TC_002_refineSearch.xml
+  </testcaselink>
+  
+  <restore>
+    <teststep>
+	  <command interface="Bing">quit</command>
+	</teststep>
+  </restore>
+</testgroup>

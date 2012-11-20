@@ -1,0 +1,14 @@
+<testgroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="dosTestGroup">
+  <description>An example Test Group</description>
+  <requirementid>req1.1</requirementid>
+  <requirementid>req2.1</requirementid>
+  <prepare>
+    <teststep>
+      <description>Doing a perl preparation first</description>
+      <script type="perl">perlTest.pl</script>
+	</teststep>
+  </prepare>
+  <testcaselink id="TestCase1" type="shell">
+    cmdScript.cmd
+  </testcaselink>
+</testgroup>

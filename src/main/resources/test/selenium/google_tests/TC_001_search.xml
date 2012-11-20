@@ -1,0 +1,51 @@
+<testcase id="001_search">
+  <description>Test Case for google custom key-word 'search'</description>
+  <execute>
+    <teststep>
+	  <command interface="Google">search</command>
+	  <parameter id="query" sequence="2">
+	    <value>cows</value>
+	  </parameter>
+	</teststep>
+    <teststep>
+	  <command interface="Google">checkTitle</command>
+	  <parameter id="title" type="string" sequence="1">
+	    <value>cows - Google zoeken</value>
+	  </parameter>
+	</teststep>
+    <teststep>
+	  <command interface="Google">back</command>
+	  <description>Go back to initial page</description>
+	</teststep>
+    <teststep>
+	  <command interface="Default">wait</command>
+	  <parameter id="TIME" type="int" sequence="1">
+	    <value>1</value>
+	  </parameter>
+	</teststep>
+    <teststep>
+	  <command interface="Google">checkTitle</command>
+	  <parameter id="title" type="string" sequence="1">
+	    <value>Google</value>
+	  </parameter>
+	</teststep>
+    <teststep>
+	  <command interface="Google">findElement</command>
+	  <parameter id="by" type="name" sequence="1">
+	    <value>q</value>
+	  </parameter>
+	  <parameter id="element" sequence="2">
+	    <value>queryField</value>
+	  </parameter>
+	</teststep>
+    <teststep>
+	  <command interface="Google">clear</command>
+	  <parameter id="element" sequence="1">
+	    <variable>queryField</variable>
+	  </parameter>
+	</teststep>
+    <teststep>
+	  <command interface="Google">quit</command>
+	</teststep>
+  </execute>
+</testcase>

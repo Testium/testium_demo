@@ -1,0 +1,12 @@
+<testsuite id="all">
+  <testgroup id="dos">
+    <execution>
+      <script>testGroupFile.xml</script>
+    </execution>
+  </testgroup>
+  <testgroup id="TG2">
+    <execution>
+      <script>testGroupWatij_local.xml</script>
+    </execution>
+  </testgroup>
+</testsuite>

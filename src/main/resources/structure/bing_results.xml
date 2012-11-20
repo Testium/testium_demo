@@ -1,0 +1,11 @@
+<ElementDefinitions>
+  <DefineElement>
+    <Name>queryResults</Name>
+    <By type="id">results</By>
+  </DefineElement>
+  <DefineElementList>
+    <Name>resultList</Name>
+    <By type="xpath">ul/li</By>
+	<BaseElement>queryResults</BaseElement>
+  </DefineElementList>
+</ElementDefinitions>

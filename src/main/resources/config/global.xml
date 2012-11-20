@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+  <GlobalConfiguration>
+    <ConfigurationDirectory>{basedir}\config</ConfigurationDirectory>
+	<ProjectDirectory>{basedir}\test</ProjectDirectory>
+    <PluginsDirectory>{basedir}\plugins</PluginsDirectory>
+    <PluginLoaders>
+        net.sf.testium.plugins.SurefireReportPlugin;
+        net.sf.testium.plugins.ShellTestPlugin;
+        net.sf.testium.plugins.PerlTestPlugin;
+<!--
+        net.sf.testium.plugins.SoapuiPlugin;
+ -->
+        net.sf.testium.plugins.SutControlPlugin;
+		net.sf.testium.plugins.SeleniumPlugin
+   </PluginLoaders>
+    <DefaultUserConfigurationFile>.testautomation</DefaultUserConfigurationFile>
+    <!--TraceEnabled>false</TraceEnabled-->
+    <TraceDepth>10</TraceDepth>
+    <TraceClass>net.sf.testium.Main</TraceClass>
+    <TraceLevel>ALL</TraceLevel>
+    <!-- 
+		0: HIGH,
+		1: EXEC,
+		2: EXEC_PLUS,
+		3: EXEC_UTIL,
+		4: SUITE,
+		5: CONSTRUCTOR,
+		6: UTIL,
+		7: SETTER,
+		8: GETTER,
+		9: ALL
+	-->
+    <TestEnvironment>System Test</TestEnvironment>
+  </GlobalConfiguration>

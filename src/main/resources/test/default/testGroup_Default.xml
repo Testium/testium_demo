@@ -1,0 +1,11 @@
+<testgroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="default">
+  <description>Test Group to test the Default Test Step Commands</description>
+  <requirementid>req1.1</requirementid>
+  <requirementid>req1.2</requirementid>
+  <testcaselink id="001_set_check_variable" type="tti">
+    TC_001_set_check_variable.xml
+  </testcaselink>
+  <testcaselink id="002_if_then" type="tti">
+    TC_002_if_then.xml
+  </testcaselink>
+</testgroup>

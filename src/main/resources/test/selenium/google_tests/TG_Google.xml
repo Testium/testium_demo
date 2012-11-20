@@ -1,0 +1,8 @@
+<testgroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="google">
+  <description>Test Group to test the Custom Commands</description>
+  <requirementid>req6.1</requirementid>
+  <requirementid>req6.2</requirementid>
+  <testcaselink id="01_search">
+    TC_001_search.xml
+  </testcaselink>
+</testgroup>

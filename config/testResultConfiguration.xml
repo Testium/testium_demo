@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<TestResultWriter>
-	<xslRunDir>{basedir}\data\resultPresentation\run</xslRunDir>
-	<xslGroupDir>{basedir}\data\resultPresentation\group</xslGroupDir>
-	<xslCaseDir>{basedir}\data\resultPresentation\case</xslCaseDir>
-	<OutputBaseDirectory>C:\\Temp\\{startdate}_{starttime}</OutputBaseDirectory>
-	<toStdOut>true</toStdOut>
-</TestResultWriter>

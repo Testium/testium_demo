@@ -1,0 +1,26 @@
+<testcase id="01_get_check_currentUrl">
+  <description>Test Case for getCurrentUrl and checkCurrentUrl</description>
+  <execute>
+    <teststep>
+	  <command interface="Browser">getCurrentUrl</command>
+	  <parameter id="url" type="string">
+	    <variable>GoogleURL</variable>
+	  </parameter>
+	</teststep>
+    <teststep>
+	  <command interface="Default">checkVariable</command>
+	  <parameter id="VARIABLE" type="string">
+	    <variable>GoogleURL</variable>
+	  </parameter>
+	  <parameter id="VALUE" type="string">
+	    <value>http://www.google.nl/</value>
+	  </parameter>
+	</teststep>
+    <teststep>
+	  <command interface="Browser">checkCurrentUrl</command>
+	  <parameter id="url" type="string">
+	    <value>http://www.google.nl/</value>
+	  </parameter>
+	</teststep>
+  </execute>
+</testcase>

@@ -1,0 +1,51 @@
+<CustomStepDefinitions>
+	<CustomStep command="search">
+		<description>Open the browser with www.google.com and do a search.</description>
+		<parameterspec name="query" type="String">
+		    <optional>false</optional>
+		    <valueAllowed>true</valueAllowed>
+		    <variableAllowed>true</variableAllowed>
+		    <emptyAllowed>false</emptyAllowed>
+		</parameterspec>
+		<execute>
+			<teststep>
+			  <command interface="Google">get</command>
+			  <parameter id="url" type="string" sequence="1">
+				<value>http://www.google.com/</value>
+			  </parameter>
+			</teststep>
+			<teststep>
+			  <command interface="Google">findElement</command>
+			  <parameter id="by" type="name" sequence="1">
+				<value>q</value>
+			  </parameter>
+			  <parameter id="element" type="String" sequence="2">
+				<value>queryField</value>
+			  </parameter>
+			</teststep>
+			<teststep>
+			  <command interface="Google">sendKeys</command>
+			  <parameter id="keys" sequence="1">
+				<variable>query</variable>
+			  </parameter>
+			  <parameter id="element" sequence="2">
+				<variable>queryField</variable>
+			  </parameter>
+			</teststep>
+			<teststep>
+			  <command interface="Google">submit</command>
+			  <parameter id="element" sequence="1">
+				<variable>queryField</variable>
+			  </parameter>
+			</teststep>
+			<teststep>
+			  <command interface="Default">wait</command>
+			  <parameter id="TIME" type="int" sequence="1">
+				<value>1</value>
+			  </parameter>
+			</teststep>
+		</execute>
+		<return>queryField</return>
+	</CustomStep>
+</CustomStepDefinitions>
+

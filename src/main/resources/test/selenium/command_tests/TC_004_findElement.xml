@@ -1,0 +1,72 @@
+<testcase id="04_findElement_sendKeys_submitElement">
+  <description>Test Case for find sendKeys and submit Element</description>
+  <execute>
+    <teststep>
+	  <command interface="Browser">findElement</command>
+	  <parameter id="by" type="name">
+	    <value>q</value>
+	  </parameter>
+	  <parameter id="element">
+	    <value>queryField</value>
+	  </parameter>
+	</teststep>
+    <teststep>
+	  <command interface="Browser">sendKeys</command>
+	  <parameter id="keys" type="string">
+	    <value>cats</value>
+	  </parameter>
+	  <parameter id="element">
+	    <variable>queryField</variable>
+	  </parameter>
+	</teststep>
+    <teststep>
+	  <command interface="Browser">submit</command>
+	  <parameter id="element">
+	    <variable>queryField</variable>
+	  </parameter>
+	</teststep>
+    <teststep>
+	  <command interface="Default">wait</command>
+	  <parameter id="TIME" type="int">
+	    <value>1</value>
+	  </parameter>
+	</teststep>
+    <teststep>
+	  <command interface="Browser">checkTitle</command>
+	  <parameter id="title" type="string">
+	    <value>cats - Google zoeken</value>
+	  </parameter>
+	</teststep>
+    <teststep>
+	  <command interface="Browser">back</command>
+	  <description>Go back to initial page</description>
+	</teststep>
+    <teststep>
+	  <command interface="Default">wait</command>
+	  <parameter id="TIME" type="int">
+	    <value>1</value>
+	  </parameter>
+	</teststep>
+    <teststep>
+	  <command interface="Browser">checkTitle</command>
+	  <parameter id="title" type="string">
+	    <value>Google</value>
+	  </parameter>
+	</teststep>
+    <teststep>
+	  <command interface="Browser">findElement</command>
+	  <parameter id="by" type="name">
+	    <value>q</value>
+	  </parameter>
+	  <parameter id="element">
+	    <value>queryField</value>
+	  </parameter>
+	</teststep>
+    <teststep>
+	  <command interface="Browser">clear</command>
+	  <parameter id="element">
+	    <variable>queryField</variable>
+	  </parameter>
+	</teststep>
+  </execute>
+</testcase>

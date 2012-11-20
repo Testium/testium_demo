@@ -1,0 +1,75 @@
+<testcase id="001_search">
+  <description>Test Case for google custom key-word 'search'</description>
+  <prepare>
+	<teststep>
+	  <command interface="Bing">loadDefinitions</command>
+	  <parameter id="file" type="string">
+		<value>{basedir}\structure\bing_query.xml</value>
+	  </parameter>
+	</teststep>
+	<teststep>
+	  <command interface="Bing">loadDefinitions</command>
+	  <parameter id="file" type="string">
+		<value>{basedir}\structure\bing_results.xml</value>
+	  </parameter>
+	</teststep>
+  </prepare>
+  <execute>
+	<teststep>
+	  <command interface="Default">comment</command>
+	  <parameter id="comment" type="string">
+		<value>Browser is: {browsertype}</value>
+	  </parameter>
+	  <parameter id="toScreen" type="Boolean">
+		<value>true</value>
+	  </parameter>
+	</teststep>
+	<teststep>
+	  <command interface="Bing">get</command>
+	  <parameter id="url" type="string">
+		<value>http://www.bing.com/?setplang=en-US</value>
+	  </parameter>
+	</teststep>
+	<teststep>
+	  <command interface="Bing">sendKeys</command>
+	  <parameter id="keys">
+		<value>lego</value>
+	  </parameter>
+	  <parameter id="element">
+		<variable>queryField</variable>
+	  </parameter>
+	</teststep>
+	<teststep>
+	  <command interface="Bing">submit</command>
+	  <parameter id="element">
+		<variable>queryField</variable>
+	  </parameter>
+	</teststep>
+	<teststep>
+	  <command interface="Bing">waitForVisible</command>
+	  <parameter id="element">
+		<variable>queryResults</variable>
+	  </parameter>
+	</teststep>
+   <teststep>
+	  <command interface="Bing">checkTitle</command>
+	  <parameter id="title" type="string">
+	    <value>lego - Bing</value>
+	  </parameter>
+	</teststep>
+    <teststep>
+	  <command interface="Default">checkListSize</command>
+      <description>Check that the list has size 11 (10 results + 1 javascript-element).</description>
+	  <parameter id="list" type="string">
+	    <variable>resultList</variable>
+	  </parameter>
+	  <parameter id="size" type="int">
+	    <value>11</value>
+	  </parameter>
+	</teststep>
+	
+<!--     <teststep>
+	  <command interface="Bing">close</command>
+	</teststep>
+ -->  </execute>
+</testcase>
