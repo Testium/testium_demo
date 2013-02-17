@@ -128,16 +128,23 @@
 					<xsl:attribute name='class'>
 						<xsl:choose>
 							<xsl:when test="./result='PASSED'">
-								tc_r_pass
+								step_r_pass
 							</xsl:when>
 							<xsl:otherwise>
-								tc_r_fail
+								step_r_fail
 							</xsl:otherwise>
 						</xsl:choose>
 					</xsl:attribute>
 					<xsl:value-of select="./result" />
 				</td>
-				<td class="tc_comment">
+				<td class="step_logfile">
+					<xsl:if test="count( logfile ) > 0">
+						<xsl:for-each select="logfile">
+							<xsl:call-template name="printLogFileLink"/>
+						</xsl:for-each>
+					</xsl:if>
+				</td>
+				<td class="step_comment">
 				  <xsl:call-template name="breakNewlines">
 				    <xsl:with-param name="text" select="./comment"/>
 				  </xsl:call-template>

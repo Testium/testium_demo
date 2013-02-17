@@ -5,15 +5,12 @@
     <SaveScreenshot>ALWAYS</SaveScreenshot>
     <ChromeDriver>{basedir}\..\..\src\main\resources\data\chromedriver.exe</ChromeDriver>
     <IePathToDriverServer>{basedir}\..\..\src\main\resources\data\IEDriverServer.exe</IePathToDriverServer>
+    <!--
+      <SeleniumGridUrl>http://localhost:4444/wd/hub</SeleniumGridUrl>
+      -->
 	<SeleniumInterfaces>
-		<SeleniumInterface name="Browser">
-		</SeleniumInterface>
-		<SeleniumInterface name="Google">
-		<!-- 
-		    <CustomStepDefinitionsLink>{basedir}\keywords\google_search.xml</CustomStepDefinitionsLink>
- -->
-		</SeleniumInterface>
-	 	<SeleniumInterface name="Bing">
-		</SeleniumInterface>
+		<SeleniumInterface>Browser</SeleniumInterface>
+		<SeleniumInterface>Google</SeleniumInterface>
+	 	<SeleniumInterface>Bing</SeleniumInterface>
 	</SeleniumInterfaces>
 </SeleniumConfiguration>

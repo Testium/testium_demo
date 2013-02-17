@@ -1,0 +1,20 @@
+<testcase id="010_check_keyword_with_optional_parameter">
+  <description>Test Case to test using a keyword with an optional parameter</description>
+  <execute>
+    <action>
+	  <command interface="Default">setVariable</command>
+	  <parameter id="name" type="string">
+	    <value>Foppe</value>
+	  </parameter>
+	  <parameter id="value" type="string">
+	    <value>Fryslan</value>
+	  </parameter>
+	</action>
+    <check>
+	  <command interface="Google">keyword_with_optional_parameter</command>
+	  <parameter id="param1" type="string">
+	    <variable>Foppe</variable>
+	  </parameter>
+	</check>
+  </execute>
+</testcase>

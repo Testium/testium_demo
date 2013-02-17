@@ -3,12 +3,24 @@
   <requirementid>req5.1</requirementid>
   <requirementid>req5.2</requirementid>
   <prepare>
+<teststep>
+  <command interface="Default">comment</command>
+  <parameter id="comment" type="string" sequence="1">
+    <value>Is this executed?</value>
+  </parameter>
+</teststep>
     <teststep>
 	  <command interface="Browser">get</command>
 	  <parameter id="url" type="string">
 	    <value>http://www.google.com/</value>
 	  </parameter>
 	</teststep>
+<teststep>
+  <command interface="Default">comment</command>
+  <parameter id="comment" type="string" sequence="1">
+    <value>And this?</value>
+  </parameter>
+</teststep>
   </prepare>
   <testcaselink id="01_get_check_currentUrl">
     TC_001_getCheckCurrentUrl.xml
@@ -24,6 +36,9 @@
   </testcaselink>
   <testcaselink id="05_findElements_checkListSize_getListElement_SendKeys_submitElement">
     TC_005_findElements.xml
+  </testcaselink>
+  <testcaselink id="06_waitForVisible">
+    TC_006_waitForVisible.xml
   </testcaselink>
   <restore>
     <teststep>

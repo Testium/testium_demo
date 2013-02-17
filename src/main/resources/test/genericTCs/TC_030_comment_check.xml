@@ -1,0 +1,22 @@
+<testcase id="030_comment_check">
+	<description>Test Case to check if a variable has a value</description>
+	<prepare>
+	</prepare>
+	<execute>
+		<teststep>
+			<command interface="Default">comment</command>
+			<parameter id="comment" type="string" >
+				<value>The car is a {car}</value>
+			</parameter>
+		</teststep>
+		<check>
+			<command interface="Default">checkVariable</command>
+			<parameter id="variable" type="string">
+				<variable>car</variable>
+			</parameter>
+			<parameter id="value" type="string">
+				<value>volvo</value>
+			</parameter>
+		</check>
+	</execute>
+</testcase>

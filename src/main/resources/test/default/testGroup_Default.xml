@@ -1,11 +1,91 @@
-<testgroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="default">
-  <description>Test Group to test the Default Test Step Commands</description>
-  <requirementid>req1.1</requirementid>
-  <requirementid>req1.2</requirementid>
-  <testcaselink id="001_set_check_variable" type="tti">
-    TC_001_set_check_variable.xml
-  </testcaselink>
-  <testcaselink id="002_if_then" type="tti">
-    TC_002_if_then.xml
-  </testcaselink>
+<testgroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	id="default">
+	<description>Test Group to test the Default Test Step Commands</description>
+	<requirementid>req1.1</requirementid>
+	<requirementid>req1.2</requirementid>
+
+	<prepare>
+		<teststep>
+			<command interface="Default">setList</command>
+			<parameter id="name" type="string">
+				<value>shortList</value>
+			</parameter>
+			<parameter id="value" type="string">
+				<value>boxer</value>
+			</parameter>
+			<parameter id="value" type="string">
+				<value>bermuda</value>
+			</parameter>
+			<parameter id="value" type="string">
+				<value>hot-pants</value>
+			</parameter>
+		</teststep>
+
+	    <teststep>
+		  <command interface="Default">setVariable</command>
+		  <parameter id="name" type="string" sequence="1">
+		    <value>car</value>
+		  </parameter>
+		  <parameter id="value" type="string" sequence="2">
+		    <value>volvo</value>
+		  </parameter>
+		</teststep>
+	</prepare>
+
+	<testcaselink id="001_set_check_variable">
+		{projectdir}\genericTCs\TC_001_set_check_variable.xml
+	</testcaselink>
+	<testcaselink id="002_if_then">
+		{projectdir}\genericTCs\TC_002_if_then.xml
+	</testcaselink>
+	<testcaselink id="003_if_not_then_else">
+		{projectdir}\genericTCs\TC_003_if_not_then_else.xml
+	</testcaselink>
+	<testcaselink id="004_nested_if_then">
+		{projectdir}\genericTCs\TC_004_nested_if_then.xml
+	</testcaselink>
+	<testcaselink id="005_same_nested_if_then">
+		{projectdir}\genericTCs\TC_005_same_nested_if_then.xml
+	</testcaselink>
+	<testcaselink id="006_set_add_checkListSize">
+		{projectdir}\genericTCs\TC_006_set_add_checkListSize.xml
+	</testcaselink>
+	
+	<testcaselink id="010_custom_keyword">
+		{projectdir}\genericTCs\TC_010_custom_keyword.xml
+	</testcaselink>
+	<testcaselink id="020_foreach">
+		{projectdir}\genericTCs\TC_020_foreach.xml
+	</testcaselink>
+
+	<foreach>
+		<item>short</item>
+		<list>shortList</list>
+		<do>
+			<testcaselink id="021_comment">
+				{projectdir}\genericTCs\TC_021_comment.xml
+			</testcaselink>
+		</do>
+	</foreach>
+
+	<if id="if_then_testgroup">
+	  <command interface="Default">checkVariable</command>
+	  <parameter id="variable" type="string">
+	    <variable>car</variable>
+	  </parameter>
+	  <parameter id="value" type="string">
+	    <value>volvo</value>
+	  </parameter>
+	  <then>
+		<testcaselink id="030_comment_check">
+			{projectdir}\genericTCs\TC_030_comment_check.xml
+		</testcaselink>
+	  </then>
+	  <else>
+		<testcaselink id="031_comment_fail">
+			{projectdir}\genericTCs\TC_031_comment_fail.xml
+		</testcaselink>
+	  </else>
+	</if>
+	
 </testgroup>

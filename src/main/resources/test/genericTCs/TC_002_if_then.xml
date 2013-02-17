@@ -12,10 +12,10 @@
 	</teststep>
     <if>
 	  <command interface="Default">checkVariable</command>
-	  <parameter id="VARIABLE" type="string" sequence="1">
+	  <parameter id="variable" type="string" sequence="1">
 	    <variable>Foppe</variable>
 	  </parameter>
-	  <parameter id="VALUE" type="string" sequence="2">
+	  <parameter id="value" type="string" sequence="2">
 	    <value>Fryslan</value>
 	  </parameter>
 	  <then>

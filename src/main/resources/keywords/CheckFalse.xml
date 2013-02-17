@@ -1,0 +1,26 @@
+<CustomStepDefinitions>
+	<CustomStep command="check_false">
+		<description>Checks if "one" equals to "two".</description>
+		<execute>
+			<teststep>
+			  <command interface="Default">setVariable</command>
+			  <parameter id="name" type="string">
+				<value>var_one</value>
+			  </parameter>
+			  <parameter id="value" type="string">
+				<value>one</value>
+			  </parameter>
+			</teststep>
+			<teststep>
+			  <command interface="Default">checkVariable</command>
+			  <parameter id="variable" type="String">
+				<variable>var_one</variable>
+			  </parameter>
+			  <parameter id="value" type="String">
+				<value>two</value>
+			  </parameter>
+			</teststep>
+		</execute>
+	</CustomStep>
+</CustomStepDefinitions>
+

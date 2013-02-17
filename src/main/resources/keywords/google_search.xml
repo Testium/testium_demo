@@ -40,7 +40,7 @@
 			</teststep>
 			<teststep>
 			  <command interface="Default">wait</command>
-			  <parameter id="TIME" type="int" sequence="1">
+			  <parameter id="time" type="int" sequence="1">
 				<value>1</value>
 			  </parameter>
 			</teststep>

@@ -13,7 +13,7 @@
         <dependency>
             <groupId>net.sf.testium</groupId>
             <artifactId>testium</artifactId>
-            <version>0.3.14</version>
+            <version>0.3.23</version>
         </dependency>
         <dependency>
             <groupId>org.testtoolinterfaces</groupId>
@@ -23,22 +23,22 @@
         <dependency>
             <groupId>org.testtoolinterfaces</groupId>
             <artifactId>testsuite</artifactId>
-            <version>0.3.3</version>
+            <version>0.3.9</version>
         </dependency>
         <dependency>
             <groupId>org.testtoolinterfaces</groupId>
             <artifactId>testsuiteinterface</artifactId>
-            <version>0.3.4</version>
+            <version>0.3.9</version>
         </dependency>
         <dependency>
             <groupId>org.testtoolinterfaces</groupId>
             <artifactId>testresult</artifactId>
-            <version>0.3.7</version>
+            <version>0.3.11</version>
         </dependency>
         <dependency>
             <groupId>org.testtoolinterfaces</groupId>
             <artifactId>testresultinterface</artifactId>
-            <version>0.3.7</version>
+            <version>0.3.11</version>
         </dependency>
         <dependency>
             <groupId>org.testtoolinterfaces</groupId>
@@ -59,12 +59,12 @@
         <dependency>
             <groupId>net.sf.testium</groupId>
             <artifactId>perl-testium-plugin</artifactId>
-            <version>0.3.4</version>
+            <version>0.3.5-SNAPSHOT</version>
         </dependency>
         <dependency>
             <groupId>net.sf.testium</groupId>
             <artifactId>standard-sut-control-plugin</artifactId>
-            <version>0.3.4</version>
+            <version>0.3.5-SNAPSHOT</version>
         </dependency>
         <dependency>
             <groupId>net.sf.testium</groupId>
@@ -74,12 +74,12 @@
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
             <artifactId>selenium-support</artifactId>
-            <version>2.26.0</version>
+            <version>2.29.0</version>
         </dependency>
           <dependency>
             <groupId>net.sf.testium</groupId>
             <artifactId>testium-selenium-plugin</artifactId>
-             <version>0.3.14</version>
+             <version>0.3.21</version>
           </dependency>
         <dependency>
             <groupId>org.slf4j</groupId>
@@ -128,7 +128,6 @@
 			<artifactId>cssparser</artifactId>
 			<version>0.9.5</version>
         </dependency>
-        
     </dependencies>
 
     <build>
@@ -220,7 +219,7 @@
                   	commons-logging,
                   	org.beanshell,
                   	net.sourceforge.cssparser,
-                  	net.sf.cglib,
+                   	cglib,
                   	com.google.guava,
                   	org.hamcrest,
                   	net.sourceforge.htmlunit,

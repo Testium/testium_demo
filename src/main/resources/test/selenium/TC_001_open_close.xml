@@ -9,7 +9,7 @@
 	</teststep>
     <teststep>
 	  <command interface="Default">wait</command>
-	  <parameter id="TIME" type="int" sequence="1">
+	  <parameter id="time" type="int" sequence="1">
 	    <value>10</value>
 	  </parameter>
 	</teststep>
@@ -21,10 +21,10 @@
 	</teststep>
     <teststep>
 	  <command interface="Default">checkVariable</command>
-	  <parameter id="VARIABLE" type="string" sequence="1">
+	  <parameter id="variable" type="string" sequence="1">
 	    <variable>GoogleURL</variable>
 	  </parameter>
-	  <parameter id="VALUE" type="string" sequence="2">
+	  <parameter id="value" type="string" sequence="2">
 	    <value>http://www.google.nl/</value>
 	  </parameter>
 	</teststep>

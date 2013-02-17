@@ -1,0 +1,11 @@
+<testcase id="021_comment">
+  <description>Test Case to comment on an external set variable</description>
+  <execute>
+    <teststep>
+	  <command interface="Default">comment</command>
+	  <parameter id="comment" type="string" sequence="1">
+	    <value>{short} is a type of short</value>
+	  </parameter>
+	</teststep>
+  </execute>
+</testcase>

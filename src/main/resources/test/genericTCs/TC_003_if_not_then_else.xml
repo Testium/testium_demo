@@ -1,0 +1,39 @@
+<testcase id="003_if_not_then_else">
+  <description>Test Case to test the if-then construction</description>
+  <execute>
+    <teststep>
+	  <command interface="Default">setVariable</command>
+	  <parameter id="name" type="string" sequence="1">
+	    <value>Foppe</value>
+	  </parameter>
+	  <parameter id="value" type="string" sequence="2">
+	    <value>Fryslan</value>
+	  </parameter>
+	</teststep>
+    <if not="true">
+	  <command interface="Default">checkVariable</command>
+	  <parameter id="variable" type="string" sequence="1">
+	    <variable>Foppe</variable>
+	  </parameter>
+	  <parameter id="value" type="string" sequence="2">
+	    <value>Fryslan</value>
+	  </parameter>
+	  <then>
+	    <teststep>
+		  <command interface="Default">comment</command>
+		  <parameter id="comment" type="string" sequence="1">
+		    <value>The if not was true</value>
+		  </parameter>
+		</teststep>
+	  </then>
+	  <else>
+	    <teststep>
+		  <command interface="Default">comment</command>
+		  <parameter id="comment" type="string" sequence="1">
+		    <value>The if not was false</value>
+		  </parameter>
+		</teststep>
+	  </else>
+	</if>
+  </execute>
+</testcase>

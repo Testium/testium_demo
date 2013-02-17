@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SeleniumInterface>
+    <BaseUrl>http://www.google.com/</BaseUrl>
+    <CustomStepDefinitionsLink>{basedir}\keywords\google_search.xml</CustomStepDefinitionsLink>
+		    
+<!-- Should be moved to default -->
+    <CustomStepDefinitionsLink>{basedir}\keywords\keyword_with_optional_parameter.xml</CustomStepDefinitionsLink>
+    <CustomStepDefinitionsLink>{basedir}\keywords\CheckFalse.xml</CustomStepDefinitionsLink>
+    <CustomStepDefinitionsLink>{basedir}\keywords\CheckTrue.xml</CustomStepDefinitionsLink>
+    <CustomStepDefinitionsLink>{basedir}\keywords\CheckNested_ifThen.xml</CustomStepDefinitionsLink>
+
+</SeleniumInterface>

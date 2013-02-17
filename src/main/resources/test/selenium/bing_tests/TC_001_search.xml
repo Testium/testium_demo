@@ -59,12 +59,12 @@
 	</teststep>
     <teststep>
 	  <command interface="Default">checkListSize</command>
-      <description>Check that the list has size 11 (10 results + 1 javascript-element).</description>
+      <description>Check that the list has size 9 (8 results + 1 javascript-element).</description>
 	  <parameter id="list" type="string">
 	    <variable>resultList</variable>
 	  </parameter>
 	  <parameter id="size" type="int">
-	    <value>11</value>
+	    <value>9</value>
 	  </parameter>
 	</teststep>
 	

@@ -13,12 +13,17 @@ table
 	padding-right: 25px;
 }
 
+.step_info
+{
+	width: 1%;
+}
+
 .step_id
 {
 	font: 14px sans-serif;
 	font-weight:bold;
 	padding-right: 25px;
-	width: 70%;
+	width: 69%;
 }
 
 .tc_r_fail

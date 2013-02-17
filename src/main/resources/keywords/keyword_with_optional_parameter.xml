@@ -1,0 +1,52 @@
+<CustomStepDefinitions>
+	<CustomStep command="keyword_with_optional_parameter">
+		<description>Checks if optional parameter is set.</description>
+		<parameterspec name="param1" type="String">
+		    <optional>false</optional>
+		    <valueAllowed>true</valueAllowed>
+		    <variableAllowed>true</variableAllowed>
+		    <emptyAllowed>false</emptyAllowed>
+		</parameterspec>
+		<parameterspec name="param2" type="String">
+		    <optional>true</optional>
+		    <valueAllowed>true</valueAllowed>
+		    <variableAllowed>true</variableAllowed>
+		    <emptyAllowed>true</emptyAllowed>
+		    <default></default>
+		</parameterspec>
+		<execute>
+			<teststep>
+			  <command interface="Default">comment</command>
+			  <parameter id="comment" type="string">
+				<value>First parameter: {param1}</value>
+			  </parameter>
+			</teststep>
+			<if not="true">
+			  <command interface="Default">checkVariable</command>
+			  <parameter id="variable" type="String">
+				<variable>param2</variable>
+			  </parameter>
+			  <parameter id="value" type="String">
+				<value></value>
+			  </parameter>
+			  <then>
+				<teststep>
+				  <command interface="Default">comment</command>
+				  <parameter id="comment" type="string">
+					<value>Second parameter: {param2}</value>
+				  </parameter>
+				</teststep>
+			  </then>
+			  <else>
+				<teststep>
+				  <command interface="Default">comment</command>
+				  <parameter id="comment" type="string">
+					<value>Second parameter is not set</value>
+				  </parameter>
+				</teststep>
+			  </else>
+			</if>
+		</execute>
+	</CustomStep>
+</CustomStepDefinitions>
+

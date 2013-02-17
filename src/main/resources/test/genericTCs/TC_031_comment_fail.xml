@@ -1,0 +1,22 @@
+<testcase id="031_comment_fail">
+	<description>Test Case that will fail</description>
+	<prepare>
+	</prepare>
+	<execute>
+		<teststep>
+			<command interface="Default">comment</command>
+			<parameter id="comment" type="string" >
+				<value>The car is a {car}</value>
+			</parameter>
+		</teststep>
+		<check>
+			<command interface="Default">checkVariable</command>
+			<parameter id="variable" type="string">
+				<variable>car</variable>
+			</parameter>
+			<parameter id="value" type="string">
+				<value>A bogus string that will make this check fail always.</value>
+			</parameter>
+		</check>
+	</execute>
+</testcase>

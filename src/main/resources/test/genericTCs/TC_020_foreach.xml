@@ -1,0 +1,37 @@
+<testcase id="020_foreach">
+  <description>Test Case to test the foreach step construction</description>
+  <prepare>
+    <teststep>
+	  <command interface="Default">setList</command>
+	  <parameter id="name" type="string">
+	    <value>theBeatles</value>
+	  </parameter>
+	  <parameter id="value" type="string">
+	    <value>John Lennon</value>
+	  </parameter>
+	  <parameter id="value" type="string">
+	    <value>Paul McCartney</value>
+	  </parameter>
+	  <parameter id="value" type="string">
+	    <value>George Harrison</value>
+	  </parameter>
+	  <parameter id="value" type="string">
+	    <value>Ringo Starr</value>
+	  </parameter>
+	</teststep>
+  </prepare>
+  <execute>
+    <foreach>
+	  <item>beatle</item>
+	  <list>theBeatles</list>
+	  <do>
+	    <teststep>
+		  <command interface="Default">comment</command>
+		  <parameter id="comment" type="string" sequence="1">
+		    <value>{beatle} is/was a beatle</value>
+		  </parameter>
+		</teststep>
+	  </do>
+	</foreach>
+  </execute>
+</testcase>

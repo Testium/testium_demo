@@ -9,10 +9,10 @@
 	</teststep>
     <teststep>
 	  <command interface="Default">checkVariable</command>
-	  <parameter id="VARIABLE" type="string">
+	  <parameter id="variable" type="string">
 	    <variable>GoogleTitle</variable>
 	  </parameter>
-	  <parameter id="VALUE" type="string">
+	  <parameter id="value" type="string">
 	    <value>Google</value>
 	  </parameter>
 	</teststep>

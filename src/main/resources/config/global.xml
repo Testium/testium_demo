@@ -31,4 +31,11 @@
 		9: ALL
 	-->
     <TestEnvironment>System Test</TestEnvironment>
+<!-- 
+	<Interfaces>
+		<Interface name="Default">
+		    <CustomStepDefinitionsLink>{basedir}\keywords\keyword_with_optional_parameter.xml</CustomStepDefinitionsLink>
+		</Interface>
+	</Interfaces>
+ -->
   </GlobalConfiguration>

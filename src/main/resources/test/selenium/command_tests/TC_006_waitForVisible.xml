@@ -1,0 +1,23 @@
+<testcase id="01_get_check_currentUrl">
+  <description>Test Case for getCurrentUrl and checkCurrentUrl</description>
+  <execute>
+	<teststep>
+	  <command interface="Browser">defineElement</command>
+	  <parameter id="by" type="name">
+		<value>q</value>
+	  </parameter>
+	  <parameter id="name" type="String">
+		<value>queryField</value>
+	  </parameter>
+	</teststep>
+	<teststep>
+	  <command interface="Browser">waitForVisible</command>
+	  <parameter id="element" type="WebElement">
+		<variable>queryField</variable>
+	  </parameter>
+	  <parameter id="timeout" type="Long">
+		<value>2</value>
+	  </parameter>
+	</teststep>
+  </execute>
+</testcase>

@@ -60,7 +60,7 @@
 	</teststep>
     <teststep>
 	  <command interface="Default">wait</command>
-	  <parameter id="TIME" type="int">
+	  <parameter id="time" type="int">
 	    <value>1</value>
 	  </parameter>
 	</teststep>
@@ -76,7 +76,7 @@
 	</teststep>
     <teststep>
 	  <command interface="Default">wait</command>
-	  <parameter id="TIME" type="int">
+	  <parameter id="time" type="int">
 	    <value>1</value>
 	  </parameter>
 	</teststep>

@@ -1,0 +1,59 @@
+<CustomStepDefinitions>
+	<CustomStep command="check_nested_if_then">
+		<description>Checks if optional parameter is set.</description>
+		<execute>
+			<if>
+			  <command interface="Google">check_true</command>
+			  <then>
+				<if>
+				  <command interface="Google">check_true</command>
+				  <then>
+					<if>
+					  <command interface="Google">check_false</command>
+					  <then>
+						<teststep>
+						  <command interface="Default">comment</command>
+						  <parameter id="comment" type="string">
+							<value>Failed: this should not have been printed (1)</value>
+						  </parameter>
+						</teststep>
+						<teststep>
+						  <command interface="Google">check_false</command>
+						</teststep>
+					  </then>
+					  <else>
+						<teststep>
+						  <command interface="Google">check_true</command>
+						</teststep>
+					  </else>
+					</if>
+				  </then>
+				  <else>
+					<teststep>
+					  <command interface="Default">comment</command>
+					  <parameter id="comment" type="string">
+						<value>Failed: this should not have been printed (2)</value>
+					  </parameter>
+					</teststep>
+					<teststep>
+					  <command interface="Google">check_false</command>
+					</teststep>
+				  </else>
+				</if>
+			  </then>
+			  <else>
+				<teststep>
+				  <command interface="Default">comment</command>
+				  <parameter id="comment" type="string">
+					<value>Failed: this should not have been printed (3)</value>
+				  </parameter>
+				</teststep>
+				<teststep>
+				  <command interface="Google">check_false</command>
+				</teststep>
+			  </else>
+			</if>
+		</execute>
+	</CustomStep>
+</CustomStepDefinitions>
+
