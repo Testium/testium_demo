@@ -20,4 +20,15 @@
   <testgrouplink id="bing">
 	bing_tests\TG_Bing.xml
   </testgrouplink>
+
+<!--   
+  <restore>
+			<teststep>
+			  <command interface="Default">wait</command>
+			  <parameter id="time" type="int" sequence="1">
+				<value>1</value>
+			  </parameter>
+			</teststep>
+  </restore>
+ -->
 </testgroup>

@@ -1,5 +1,5 @@
-<testcase id="002_if_then">
-  <description>Test Case to test the foreach step construction</description>
+<testcase id="006_set_add_checkListSize">
+  <description>Test Case to test the set and addList step construction</description>
   <prepare>
   </prepare>
   <execute>
@@ -75,6 +75,26 @@
 	  </parameter>
 	  <parameter id="size" type="int">
 	    <value>8</value>
+	  </parameter>
+	</teststep>
+
+    <teststep>
+	  <command interface="Default">removeFromList</command>
+	  <parameter id="list" type="List">
+	    <variable>coins</variable>
+	  </parameter>
+	  <parameter id="value" type="string">
+	    <value>10 cents</value>
+	  </parameter>
+	</teststep>
+
+    <teststep>
+	  <command interface="Default">checkListSize</command>
+	  <parameter id="list" type="List">
+	    <variable>coins</variable>
+	  </parameter>
+	  <parameter id="size" type="int">
+	    <value>7</value>
 	  </parameter>
 	</teststep>
 

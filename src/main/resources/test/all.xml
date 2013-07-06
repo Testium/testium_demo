@@ -18,6 +18,9 @@
   <testgrouplink id="default">
 	default\testGroup_Default.xml
   </testgrouplink>
+  <testgrouplink id="SoapUI">
+	soap\testGroup_SoapUI.xml
+  </testgrouplink>
   <testgrouplink id="selenium">
 	selenium\testGroup_Selenium.xml
   </testgrouplink>

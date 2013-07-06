@@ -20,6 +20,12 @@
 				<value>hot-pants</value>
 			</parameter>
 		</teststep>
+	    <teststep>
+		  <command interface="Default">setList</command>
+		  <parameter id="name" type="string">
+		    <value>otherEmptyList</value>
+		  </parameter>
+		</teststep>
 
 	    <teststep>
 		  <command interface="Default">setVariable</command>
@@ -61,6 +67,16 @@
 	<foreach>
 		<item>short</item>
 		<list>shortList</list>
+		<do>
+			<testcaselink id="021_comment">
+				{projectdir}\genericTCs\TC_021_comment.xml
+			</testcaselink>
+		</do>
+	</foreach>
+
+	<foreach>
+		<item>short</item>
+		<list>otherEmptyList</list>
 		<do>
 			<testcaselink id="021_comment">
 				{projectdir}\genericTCs\TC_021_comment.xml

@@ -4,7 +4,7 @@
     <teststep>
 	  <command interface="Browser">getCurrentUrl</command>
 	  <parameter id="url" type="string">
-	    <variable>GoogleURL</variable>
+	    <value>GoogleURL</value>
 	  </parameter>
 	</teststep>
     <teststep>

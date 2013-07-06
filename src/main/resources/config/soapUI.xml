@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoapuiConfiguration>
-    <project>/home/akranenb/Projects/SystemTest/Home/testsuite/TG_51_SPF/TG_511_SPF_SOAP/SPF_soapui-project</project>
-    <soapInterface>http://rhodos-zone4:11112/spf</soapInterface>
-	<log4jFile>config/soapui-log4j.xml</log4jFile>
+    <project>{basedir}\test\soap\TestService-soapui-project.xml</project>
+    <soapInterface>http://arjan-vaio:8088/mockTestServiceBinding</soapInterface>
+	<log4jFile>{configdir}\soapui-log4j.xml</log4jFile>
 </SoapuiConfiguration>

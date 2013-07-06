@@ -67,12 +67,14 @@
  -->
     <teststep>
 	  <command interface="Default">checkListSize</command>
-      <description>Check that the list before has size 9 (8 results + 1 javascript-element).</description>
 	  <parameter id="list" type="string">
 	    <variable>resultList</variable>
 	  </parameter>
-	  <parameter id="size" type="int" sequence="2">
-	    <value>9</value>
+	  <parameter id="size" type="int">
+	    <value>5</value>
+	  </parameter>
+	  <parameter id="match" type="String">
+	    <value>greaterThan</value>
 	  </parameter>
 	</teststep>
 <!-- 

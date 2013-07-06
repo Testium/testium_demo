@@ -7,12 +7,28 @@
         net.sf.testium.plugins.SurefireReportPlugin;
         net.sf.testium.plugins.ShellTestPlugin;
         net.sf.testium.plugins.PerlTestPlugin;
-<!--
+        net.sf.testium.plugins.SutControlPlugin;
+<!-- 
         net.sf.testium.plugins.SoapuiPlugin;
  -->
-        net.sf.testium.plugins.SutControlPlugin;
 		net.sf.testium.plugins.SeleniumPlugin
    </PluginLoaders>
+    <OsgiPlugins>
+    	<OsgiPlugin>
+    		<name>net.sf.testium.plugins.ExamplePlugin</name>
+    		<url>file:{basedir}\plugins\testium-example-plugin-0.0.1-SNAPSHOT.jar</url>
+    	</OsgiPlugin>
+    	<OsgiPlugin>
+    		<name>net.sf.testium.plugins.SoapuiPlugin</name>
+    		<url>file:{basedir}\plugins\testium-soapui-plugin-0.4.1-SNAPSHOT.jar</url>
+    	</OsgiPlugin>
+<!-- 
+    	<OsgiPlugin>
+    		<name>net.sf.testium.plugins.TryoutPlugin</name>
+    		<url>file:{basedir}\plugins\testium-tryout-plugin-0.0.1-SNAPSHOT.jar</url>
+    	</OsgiPlugin>
+ -->
+    </OsgiPlugins>
     <DefaultUserConfigurationFile>.testautomation</DefaultUserConfigurationFile>
     <!--TraceEnabled>false</TraceEnabled-->
     <TraceDepth>10</TraceDepth>

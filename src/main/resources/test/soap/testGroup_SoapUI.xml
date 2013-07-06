@@ -1,0 +1,9 @@
+<testgroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="soapUiTestGroup">
+  <description>Test Group to test the SoapUI plugin</description>
+  <requirementid>req6.1</requirementid>
+  <requirementid>req7</requirementid>
+
+  <testcaselink id="pingSoapServer TestCase" type="soapui">
+      TestService_soapui-project/ExampleTestSuite
+  </testcaselink>
+</testgroup>

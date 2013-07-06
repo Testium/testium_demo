@@ -19,6 +19,12 @@
 	    <value>Ringo Starr</value>
 	  </parameter>
 	</teststep>
+    <teststep>
+	  <command interface="Default">setList</command>
+	  <parameter id="name" type="string">
+	    <value>emptyList</value>
+	  </parameter>
+	</teststep>
   </prepare>
   <execute>
     <foreach>
@@ -29,6 +35,19 @@
 		  <command interface="Default">comment</command>
 		  <parameter id="comment" type="string" sequence="1">
 		    <value>{beatle} is/was a beatle</value>
+		  </parameter>
+		</teststep>
+	  </do>
+	</foreach>
+
+    <foreach>
+	  <item>empty</item>
+	  <list>emptyList</list>
+	  <do>
+	    <teststep>
+		  <command interface="Default">comment</command>
+		  <parameter id="comment" type="string" sequence="1">
+		    <value>{empty} is not a beatle</value>
 		  </parameter>
 		</teststep>
 	  </do>
