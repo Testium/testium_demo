@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <TestResultWriter>
-	<xslRunDir>{basedir}\data\resultPresentation\run</xslRunDir>
-	<xslGroupDir>{basedir}\data\resultPresentation\group</xslGroupDir>
-	<xslCaseDir>{basedir}\data\resultPresentation\case</xslCaseDir>
-	<OutputBaseDirectory>{basedir}\..\\{startdate}_{starttime}</OutputBaseDirectory>
+	<xslRunDir>{projectdir}/../data/resultPresentation/run</xslRunDir>
+	<xslGroupDir>{projectdir}/../data/resultPresentation/group</xslGroupDir>
+	<xslCaseDir>{projectdir}/../data/resultPresentation/case</xslCaseDir>
+	<OutputBaseDirectory>{basedir}/../{startdate}_{starttime}</OutputBaseDirectory>
 	<toStdOut>true</toStdOut>
 </TestResultWriter>

@@ -15,7 +15,7 @@
             <artifactId>testium</artifactId>
 <!--             <version>0.4.1-SNAPSHOT</version>
  -->
-            <version>0.3.34</version>
+            <version>0.3.36-SNAPSHOT</version>
         </dependency>
         <dependency>
             <groupId>org.testtoolinterfaces</groupId>
@@ -27,7 +27,7 @@
         <dependency>
             <groupId>org.testtoolinterfaces</groupId>
             <artifactId>testsuite</artifactId>
-            <version>0.3.10</version>
+            <version>0.3.11-SNAPSHOT</version>
         </dependency>
         <dependency>
             <groupId>org.testtoolinterfaces</groupId>
@@ -37,7 +37,7 @@
         <dependency>
             <groupId>org.testtoolinterfaces</groupId>
             <artifactId>testresult</artifactId>
-            <version>0.3.13</version>
+            <version>0.3.14-SNAPSHOT</version>
         </dependency>
         <dependency>
             <groupId>org.testtoolinterfaces</groupId>
@@ -62,9 +62,7 @@
         <dependency>
             <groupId>net.sf.testium</groupId>
             <artifactId>shell-testium-plugin</artifactId>
-<!--             <version>0.3.6-SNAPSHOT</version>
- -->
-            <version>0.3.4</version>
+            <version>0.3.6-SNAPSHOT</version>
         </dependency>
         <dependency>
             <groupId>net.sf.testium</groupId>
@@ -97,7 +95,7 @@
             <artifactId>testium-selenium-plugin</artifactId>
 <!--              <version>0.4.1-SNAPSHOT</version>
  -->
-             <version>0.3.36</version>
+             <version>0.3.37-SNAPSHOT</version>
         </dependency>
 <!-- 
         <dependency>
@@ -712,13 +710,13 @@
 
 	        </executions>
 	      </plugin>
+<!-- 
 	      <plugin>
 	        <artifactId>maven-resources-plugin</artifactId>
 	        <version>2.5</version>
 	        <executions>
 	          <execution>
 	            <id>copy-resources</id>
-	            <!-- here the phase you need -->
 	            <phase>validate</phase>
 	            <goals>
 	              <goal>copy-resources</goal>
@@ -735,6 +733,7 @@
 	          </execution>
 	        </executions>
 	      </plugin>
+ -->
         </plugins>
 
         <pluginManagement>

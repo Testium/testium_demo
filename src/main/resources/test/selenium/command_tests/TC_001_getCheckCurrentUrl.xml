@@ -8,18 +8,24 @@
 	  </parameter>
 	</teststep>
     <teststep>
-	  <command interface="Default">checkVariable</command>
-	  <parameter id="variable" type="string">
+	  <command interface="Default">checkString</command>
+	  <parameter id="string" type="string">
 	    <variable>GoogleURL</variable>
 	  </parameter>
 	  <parameter id="value" type="string">
 	    <value>http://www.google.nl/</value>
+	  </parameter>
+	  <parameter id="match" type="string">
+	    <value>startsWith</value>
 	  </parameter>
 	</teststep>
     <teststep>
 	  <command interface="Browser">checkCurrentUrl</command>
 	  <parameter id="url" type="string">
 	    <value>http://www.google.nl/</value>
+	  </parameter>
+	  <parameter id="match" type="string">
+	    <value>startsWith</value>
 	  </parameter>
 	</teststep>
   </execute>

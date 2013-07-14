@@ -1,18 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
   <GlobalConfiguration>
-    <ConfigurationDirectory>{basedir}\config</ConfigurationDirectory>
-	<ProjectDirectory>{basedir}\test</ProjectDirectory>
-    <PluginsDirectory>{basedir}\plugins</PluginsDirectory>
+    <ConfigurationDirectory>{basedir}/../../src/main/resources/config</ConfigurationDirectory>
+	<ProjectDirectory>{basedir}/../../src/main/resources/test</ProjectDirectory>
+    <PluginsDirectory>{basedir}/plugins</PluginsDirectory>
     <PluginLoaders>
         net.sf.testium.plugins.SurefireReportPlugin;
         net.sf.testium.plugins.ShellTestPlugin;
-        net.sf.testium.plugins.PerlTestPlugin;
         net.sf.testium.plugins.SutControlPlugin;
 <!-- 
+        net.sf.testium.plugins.PerlTestPlugin;
         net.sf.testium.plugins.SoapuiPlugin;
  -->
 		net.sf.testium.plugins.SeleniumPlugin
    </PluginLoaders>
+<!-- 
     <OsgiPlugins>
     	<OsgiPlugin>
     		<name>net.sf.testium.plugins.ExamplePlugin</name>
@@ -22,13 +23,16 @@
     		<name>net.sf.testium.plugins.SoapuiPlugin</name>
     		<url>file:{basedir}\plugins\testium-soapui-plugin-0.4.1-SNAPSHOT.jar</url>
     	</OsgiPlugin>
+ -->
 <!-- 
     	<OsgiPlugin>
     		<name>net.sf.testium.plugins.TryoutPlugin</name>
     		<url>file:{basedir}\plugins\testium-tryout-plugin-0.0.1-SNAPSHOT.jar</url>
     	</OsgiPlugin>
  -->
+ <!-- 
     </OsgiPlugins>
+ -->
     <DefaultUserConfigurationFile>.testautomation</DefaultUserConfigurationFile>
     <!--TraceEnabled>false</TraceEnabled-->
     <TraceDepth>10</TraceDepth>

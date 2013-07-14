@@ -20,18 +20,24 @@
 	  </parameter>
 	</teststep>
     <teststep>
-	  <command interface="Default">checkVariable</command>
-	  <parameter id="variable" type="string" sequence="1">
+	  <command interface="Default">checkString</command>
+	  <parameter id="string" type="string" sequence="1">
 	    <variable>GoogleURL</variable>
 	  </parameter>
 	  <parameter id="value" type="string" sequence="2">
 	    <value>http://www.google.nl/</value>
+	  </parameter>
+	  <parameter id="match" type="string">
+	    <value>startsWith</value>
 	  </parameter>
 	</teststep>
     <teststep>
 	  <command interface="Browser">checkCurrentUrl</command>
 	  <parameter id="url" type="string" sequence="1">
 	    <value>http://www.google.nl/</value>
+	  </parameter>
+	  <parameter id="match" type="string">
+	    <value>startsWith</value>
 	  </parameter>
 	</teststep>
     <teststep>

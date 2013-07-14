@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoapuiConfiguration>
-    <project>{basedir}\test\soap\TestService-soapui-project.xml</project>
+    <project>{projectdir}/soap/TestService-soapui-project.xml</project>
     <soapInterface>http://arjan-vaio:8088/mockTestServiceBinding</soapInterface>
-	<log4jFile>{configdir}\soapui-log4j.xml</log4jFile>
+	<log4jFile>{configdir}/soapui-log4j.xml</log4jFile>
 </SoapuiConfiguration>

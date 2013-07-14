@@ -10,7 +10,10 @@
     <teststep>
 	  <command interface="Google">checkTitle</command>
 	  <parameter id="title" type="string" sequence="1">
-	    <value>cows - Google zoeken</value>
+	    <value>cows - Google</value>
+	  </parameter>
+	  <parameter id="match" type="string">
+	    <value>startsWith</value>
 	  </parameter>
 	</teststep>
     <teststep>

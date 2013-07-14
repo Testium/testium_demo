@@ -1,4 +1,4 @@
-<testcase id="01_get_check_currentUrl">
+<testcase id="06_wat_for_visible">
   <description>Test Case for getCurrentUrl and checkCurrentUrl</description>
   <execute>
 	<teststep>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SutControlConfiguration>
   <name>Testium Demo Test Suite</name>
-  <sutControl>{userhome_bogus}\Projects\FT_Testium\FunctionTest\src\sutControl.bat</sutControl>
+  <sutControl>{userhome_bogus}/Projects/FT_Testium/FunctionTest/src/sutControl.bat</sutControl>
   <parameters>
     <start>start</start>
     <stop>stop</stop>

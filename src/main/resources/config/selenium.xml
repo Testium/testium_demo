@@ -3,8 +3,8 @@
     <DefaultBrowser>firefox</DefaultBrowser><!-- FIREFOX, IE, CHROME -->
     <SavePageSource>ONFAIL</SavePageSource>
     <SaveScreenshot>ALWAYS</SaveScreenshot>
-    <ChromeDriver>{basedir}\..\..\src\main\resources\data\chromedriver.exe</ChromeDriver>
-    <IePathToDriverServer>{basedir}\..\..\src\main\resources\data\IEDriverServer.exe</IePathToDriverServer>
+    <ChromeDriver>{projectdir}/../data/chromedriver.exe</ChromeDriver>
+    <IePathToDriverServer>{projectdir}/../data/IEDriverServer.exe</IePathToDriverServer>
     <!--
       <SeleniumGridUrl>http://localhost:4444/wd/hub</SeleniumGridUrl>
       -->

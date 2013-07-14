@@ -4,13 +4,13 @@
 	<teststep>
 	  <command interface="Bing">loadDefinitions</command>
 	  <parameter id="file" type="string">
-		<value>{basedir}\structure\bing_query.xml</value>
+		<value>{projectdir}/../structure/bing_query.xml</value>
 	  </parameter>
 	</teststep>
 	<teststep>
 	  <command interface="Bing">loadDefinitions</command>
 	  <parameter id="file" type="string">
-		<value>{basedir}\structure\bing_results.xml</value>
+		<value>{projectdir}/../structure/bing_results.xml</value>
 	  </parameter>
 	</teststep>
   </prepare>
@@ -59,12 +59,12 @@
 	</teststep>
     <teststep>
 	  <command interface="Default">checkListSize</command>
-      <description>Check that the list has size 9 (8 results + 1 javascript-element).</description>
+      <description>Check that the list has size 11 (10 results + 1 javascript-element).</description>
 	  <parameter id="list" type="string">
 	    <variable>resultList</variable>
 	  </parameter>
 	  <parameter id="size" type="int">
-	    <value>9</value>
+	    <value>11</value>
 	  </parameter>
 	</teststep>
 	

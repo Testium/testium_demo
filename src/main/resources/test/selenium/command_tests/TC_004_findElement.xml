@@ -34,7 +34,10 @@
     <teststep>
 	  <command interface="Browser">checkTitle</command>
 	  <parameter id="title" type="string">
-	    <value>cats - Google zoeken</value>
+	    <value>cats - Google</value>
+	  </parameter>
+	  <parameter id="match" type="string">
+	    <value>startsWith</value>
 	  </parameter>
 	</teststep>
     <teststep>
