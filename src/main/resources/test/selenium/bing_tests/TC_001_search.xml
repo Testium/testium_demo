@@ -16,15 +16,6 @@
   </prepare>
   <execute>
 	<teststep>
-	  <command interface="Default">comment</command>
-	  <parameter id="comment" type="string">
-		<value>Browser is: {browsertype}</value>
-	  </parameter>
-	  <parameter id="toScreen" type="Boolean">
-		<value>true</value>
-	  </parameter>
-	</teststep>
-	<teststep>
 	  <command interface="Bing">get</command>
 	  <parameter id="url" type="string">
 		<value>http://www.bing.com/?setplang=en-US</value>
