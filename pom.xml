@@ -95,6 +95,11 @@
  -->
              <version>0.3.38</version>
         </dependency>
+        <dependency>
+            <groupId>org.testium-base</groupId>
+            <artifactId>testium-kdw-plugin</artifactId>
+             <version>0.0.1-SNAPSHOT</version>
+        </dependency>
 <!-- 
         <dependency>
             <groupId>net.sf.testium</groupId>
@@ -565,12 +570,13 @@
 	              <goal>copy-dependencies</goal>
 	            </goals>
 	            <configuration>
-                  <includeGroupIds>net.sf.testium</includeGroupIds>
+                  <includeGroupIds>net.sf.testium,org.testium-base</includeGroupIds>
                   <includeArtifactIds>
                     testium-selenium-plugin,
 <!-- 
                     testium-soapui-plugin,
  -->
+                    testium-kdw-plugin,
                     standard-sut-control-plugin,
                     shell-testium-plugin,
                     perl-testium-plugin,

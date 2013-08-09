@@ -7,6 +7,7 @@
         net.sf.testium.plugins.SurefireReportPlugin;
         net.sf.testium.plugins.ShellTestPlugin;
         net.sf.testium.plugins.SutControlPlugin;
+        org.testium.plugins.KdwPlugin;
 <!-- 
         net.sf.testium.plugins.PerlTestPlugin;
         net.sf.testium.plugins.SoapuiPlugin;
