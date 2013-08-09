@@ -15,7 +15,7 @@
             <artifactId>testium</artifactId>
 <!--             <version>0.4.1-SNAPSHOT</version>
  -->
-            <version>0.3.36-SNAPSHOT</version>
+            <version>0.3.37-SNAPSHOT</version>
         </dependency>
         <dependency>
             <groupId>org.testtoolinterfaces</groupId>
@@ -27,7 +27,7 @@
         <dependency>
             <groupId>org.testtoolinterfaces</groupId>
             <artifactId>testsuite</artifactId>
-            <version>0.3.11-SNAPSHOT</version>
+            <version>0.3.11</version>
         </dependency>
         <dependency>
             <groupId>org.testtoolinterfaces</groupId>
@@ -37,12 +37,12 @@
         <dependency>
             <groupId>org.testtoolinterfaces</groupId>
             <artifactId>testresult</artifactId>
-            <version>0.3.14-SNAPSHOT</version>
+            <version>0.3.14</version>
         </dependency>
         <dependency>
             <groupId>org.testtoolinterfaces</groupId>
             <artifactId>testresultinterface</artifactId>
-            <version>0.3.13-SNAPSHOT</version>
+            <version>0.3.13</version>
         </dependency>
         <dependency>
             <groupId>org.testtoolinterfaces</groupId>
@@ -93,7 +93,7 @@
             <artifactId>testium-selenium-plugin</artifactId>
 <!--              <version>0.4.1-SNAPSHOT</version>
  -->
-             <version>0.3.37-SNAPSHOT</version>
+             <version>0.3.38</version>
         </dependency>
 <!-- 
         <dependency>
