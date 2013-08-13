@@ -1,0 +1,44 @@
+body {
+	color: #000000;
+	background-color: #ffffff;
+}
+
+.command {
+	font-size: 1.5em;
+	font-style: bold;
+}
+
+.description {
+	font-style: italic;
+}
+
+table,tr,th,td {
+	border: 0px solid green;
+	text-align: center;
+}
+
+table,tr,th,td {
+	border-collapse:collapse;
+	border: 0px solid green;
+	text-align: center;
+}
+
+th {
+	background-color: green;
+	border: 1px solid white;
+	color: white;
+}
+
+.parameterTable {
+	width: 100%;
+}
+
+.check {
+	height: 1em;
+	width: 1em;
+	vertical-align: middle;
+}
+
+.returnValue {
+	font-style: italic;
+}

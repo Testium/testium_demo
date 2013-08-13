@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <KeywordDefinitionsWriter>
-    <OutputBaseDirectory>{basedir}/../keywords</OutputBaseDirectory>
-	<XslSourceDirectory>{projectdir}/../data/keywordPresentation</XslSourceDirectory>
-    <XslFileName>Keywords.xsl</XslFileName>
+    <OutputBaseDirectory>{basedir}/../../keywords</OutputBaseDirectory>
+    <XslSourceDirectory>{projectdir}/../data/keywordPresentation</XslSourceDirectory>
+    <XslFileName>Keyword.xsl</XslFileName>
 </KeywordDefinitionsWriter>
