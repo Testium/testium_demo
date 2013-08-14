@@ -42,3 +42,15 @@ th {
 .returnValue {
 	font-style: italic;
 }
+
+.nl {
+	display:block;
+}
+
+.i1 {
+	margin-left:2em;
+}
+
+.i2 {
+	margin-left:4em;
+}
