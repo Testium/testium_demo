@@ -25,19 +25,19 @@
 	    <variable>GoogleURL</variable>
 	  </parameter>
 	  <parameter id="value" type="string" sequence="2">
-	    <value>http://www.google.nl/</value>
+	    <value>www.google.nl/</value>
 	  </parameter>
 	  <parameter id="match" type="string">
-	    <value>startsWith</value>
+	    <value>contains</value>
 	  </parameter>
 	</teststep>
     <teststep>
 	  <command interface="Browser">checkCurrentUrl</command>
 	  <parameter id="url" type="string" sequence="1">
-	    <value>http://www.google.nl/</value>
+	    <value>www.google.nl/</value>
 	  </parameter>
 	  <parameter id="match" type="string">
-	    <value>startsWith</value>
+	    <value>contains</value>
 	  </parameter>
 	</teststep>
     <teststep>

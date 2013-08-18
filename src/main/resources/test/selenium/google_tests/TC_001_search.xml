@@ -26,12 +26,14 @@
 	    <value>1</value>
 	  </parameter>
 	</teststep>
+<!-- Will give 'New Tab'. Looks like a browser bug (FF 19.0.2)
     <teststep>
 	  <command interface="Google">checkTitle</command>
 	  <parameter id="title" type="string" sequence="1">
 	    <value>Google</value>
 	  </parameter>
 	</teststep>
+-->
     <teststep>
 	  <command interface="Google">findElement</command>
 	  <parameter id="by" type="name" sequence="1">

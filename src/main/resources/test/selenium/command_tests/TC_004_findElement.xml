@@ -50,12 +50,14 @@
 	    <value>1</value>
 	  </parameter>
 	</teststep>
+<!-- Will give 'New Tab'. Looks like a browser bug (FF 19.0.2)
     <teststep>
 	  <command interface="Browser">checkTitle</command>
 	  <parameter id="title" type="string">
 	    <value>Google</value>
 	  </parameter>
 	</teststep>
+  -->
     <teststep>
 	  <command interface="Browser">findElement</command>
 	  <parameter id="by" type="name">
